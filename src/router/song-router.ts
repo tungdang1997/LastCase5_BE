@@ -4,7 +4,7 @@ import {auth} from "../middleware/auth";
 import {userAuth} from "../middleware/user";
 export const songRouter = Router()
 songRouter.get('',songController.getAllSong);
-songRouter.get('/find-song-by-name',songController.findSong);
+songRouter.get('/find-song-by-name',songController.searchNameSong);
 songRouter.use(auth)
 songRouter.get('/users',songController.getAllSong);
 songRouter.get('/find-by-name',songController.findSongByName);
