@@ -41,7 +41,7 @@ class PlaylistDetailService{
         }
         return this.playlistDetailRepository.delete({idPlaylistDetail: idPlaylistDetail});
     }
-    addS
+
 
 }
 export default new PlaylistDetailService();

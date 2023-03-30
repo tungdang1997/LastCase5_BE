@@ -2,7 +2,6 @@ import {Request, Response} from "express";
 import albumService from "../service/AlbumService";
 import songService from "../service/SongService";
 import categoryService from "../service/CategoryService";
-import {decode} from "jsonwebtoken";
 
 class AlbumController{
     private albumService;

@@ -9,8 +9,12 @@ export class User {
     username : string;
     @Column()
     password : string;
+    @Column()
+    nameUser : string;
     @Column({type: "text"})
     avatar : string;
     @Column({default:'user'})
     role : string;
+    @Column({default: true})
+    userStatus: boolean;
 }

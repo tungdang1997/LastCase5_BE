@@ -13,4 +13,7 @@ export class Album {
     imageAlbum: string;
     @Column({default: 0})
     countSong: number;
+    @Column({default: true})
+    albumStatus: boolean;
+
 }

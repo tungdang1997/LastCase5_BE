@@ -20,7 +20,8 @@ class PlaylistService{
 
     }
     save = async (playlist)=> {
-
+        playlist.countSongPlaylist = 0;
+        playlist.imagePlaylist = playlist.imagePlayList;
         return this.playlistRepository.save(playlist)
     }
     findById = async (idPlaylist)=> {
@@ -28,6 +29,7 @@ class PlaylistService{
         return playlists
     }
     updatePlaylist= async (idPlaylist, newPlaylist)=>{
+        console.log(newPlaylist, "32-playlistService")
         let playlists = await this.playlistRepository.findOneBy({idPlaylist: idPlaylist})
         if (!playlists) {
             return null

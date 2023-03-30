@@ -8,9 +8,11 @@ export class Playlist {
     @Column()
     namePlaylist: string;
     @Column()
-    idUser: number;
-    @Column()
     imagePlaylist: string;
     @Column({default: 0})
     countSongPlaylist: number;
+    @Column({default: true})
+    playlistStatus: boolean;
+    @Column()
+    idUser: number;
 }

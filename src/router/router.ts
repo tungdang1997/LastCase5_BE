@@ -10,7 +10,7 @@ import {playlistDetailRouter} from "./playlistDetail-router";
 export  const router = Router()
 router.use('/songs',songRouter);
 router.use('/playlists',playlistRouter);
-router.use('/playlistDetails',playlistDetailRouter);
+router.use('/playlist-details',playlistDetailRouter);
 router.use('/users',userRouter);
 router.use('/admins',adminRouter);
 router.use('/albums',albumRouter);
